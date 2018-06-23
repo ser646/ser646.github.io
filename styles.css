@@ -38,6 +38,7 @@ p{
     grid-area: buttons;
     display:flex;
     justify-content: space-evenly;
+    margin-bottom: 15px;
 }
 
 .grid-container{
