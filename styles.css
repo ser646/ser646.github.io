@@ -1,6 +1,11 @@
 h1 {
     font-size: 80px;
     font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+}
+
+html{
+    background: #1D1D1D;
 }
 
 .img1 {
@@ -32,6 +37,15 @@ p{
     text-align: center;
     line-height: 22px;
     font-family: monospace;
+    color: white;
+}
+
+#don{
+    width: 300px;
+    flex-grow: 0;
+    margin-top: 8px;
+    margin-bottom: 0px;
+    height: 44px;
 }
 
 .buttons{
