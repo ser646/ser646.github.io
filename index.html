@@ -20,16 +20,27 @@
             <div class = "buttons">
             <a class="btn download" href="TF2TradeHelper.zip">
                 <span>
-                    <em>Download</em><i class="fa fa-download fa-2x"></i>
+                    <em>Download</em><div class = "ic" ><i class="fa fa-download fa-2x"></i></div>
                 </span>
             </a>
-            <a class="btn donate" target = "_blank" href="https://www.paypal.me/ser646">
+            <a class="btn donate">
                 <span>
-                    <em>Donate</em><i class="fab fa-paypal fa-2x"></i>
+                    <em>Donate</em><div class = "ic" ><i class="fab fa-steam fa-2x"></i><i class="fab fa-paypal fa-2x"></i></div>
                 </span>
             </a>
             </div>
        </div>
     </div>
 </body>
+<script>
+    function openSteam(){
+        window.open('https://steamcommunity.com/tradeoffer/new/?partner=111270195&token=1aUiuvCT ', '_blank');
+    }
+    
+    function openPaypal(){
+        window.open('https://www.paypal.me/ser646 ', '_blank');
+    }
+    document.getElementsByClassName("fa-steam")[0].addEventListener("click", openSteam);
+    document.getElementsByClassName("fa-paypal")[0].addEventListener("click", openPaypal);
+</script>
 </html>
