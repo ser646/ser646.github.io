@@ -141,6 +141,7 @@ em {
     top: 20%;
 }
 
-.fab{
+.fab,
+.fa {
     cursor: pointer;
 }

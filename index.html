@@ -1,5 +1,14 @@
 <!DOCTYPE html>
 <html>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-121373466-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-121373466-1');
+</script>
 <head>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
@@ -18,16 +27,16 @@
             <img class = "img4" src="scrn2.png">
             <a class = "img5" target="_blank" href = "https://steamcommunity.com/id/xSer646x/"><img src="scrn3.png"></a>
             <div class = "buttons">
-            <a class="btn download" href="https://bit.ly/2twnNMR">
+            <div class="btn download">
                 <span>
-                    <em>Download</em><div class = "ic" ><i class="fa fa-download fa-2x"></i></div>
+                    <em>Download</em><div class = "ic" ><i class="fa fa-file fa-2x"></i><i class="fa fa-file-archive fa-2x"></i><i class="fab fa-firefox fa-2x"></i></div>	
                 </span>
-            </a>
-            <a class="btn donate">
+            </div>
+            <div class="btn donate">
                 <span>
                     <em>Donate</em><div class = "ic" ><i class="fab fa-steam fa-2x"></i><i class="fab fa-paypal fa-2x"></i></div>
                 </span>
-            </a>
+            </div>
             <p id = "don"><-- Help this extension get to Chrome Web Store! (needed 5$)</p>
             </div>
        </div>
@@ -41,7 +50,23 @@
     function openPaypal(){
         window.open('https://www.paypal.me/ser646 ', '_blank');
     }
+
+    function openMozilla(){
+        window.open('https://addons.mozilla.org/pl/firefox/addon/tf2-trade-helper/?src=search', '_blank');
+    }
+
+    function downloadCrx(){
+        window.open('TF2TradeHelperCHROME.crx');
+    }
+
+    function downloadZip(){
+        window.open('TF2TradeHelper.zip');
+    }
+
     document.getElementsByClassName("fa-steam")[0].addEventListener("click", openSteam);
     document.getElementsByClassName("fa-paypal")[0].addEventListener("click", openPaypal);
+    document.getElementsByClassName("fa-file")[0].addEventListener("click", downloadCrx);
+    document.getElementsByClassName("fa-file-archive")[0].addEventListener("click", downloadZip);
+    document.getElementsByClassName("fa-firefox")[0].addEventListener("click", openMozilla);
 </script>
 </html>
