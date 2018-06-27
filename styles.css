@@ -19,7 +19,7 @@ body{
 h2{
     background: #2e3a4c;
     padding: 8px;
-    border: black 2px solid;
+    border: black 1px solid;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     margin-bottom: -2px;
@@ -73,7 +73,7 @@ p{
 
 .comment{
     background: #292929;
-    border: black solid 2px;
+    border: black solid 1px;
     padding-left: 15px;
     border-bottom-right-radius: 0px;
     border-bottom-left-radius: 0px;
