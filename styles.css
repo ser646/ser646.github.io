@@ -4,8 +4,16 @@ h1 {
 }
 
 html{
-    background: #1D1D1D;
     color: white;
+}
+
+body{
+    background: url("background.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 h2{
@@ -79,16 +87,27 @@ p{
     grid-area: description2;
 }
 
-.grid-container{
-    display: inline-grid;
-    grid-template-areas: 
-        'description1 description1'
+.grid-container2{
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-top: 15px;
+    grid-area: screenshots;
+    grid-template-areas:
         'img2 img3'
         'img2 img4'
         'img1 img1'
-        'img5 img5'
-        'description2 description2'
-        'buttons buttons';
+        'img5 img5';
+        display: inline-grid;
+    grid-row-gap: 15px;
+}
+
+.grid-container{
+   
+    grid-template-areas: 
+        'description1'
+        'screenshots'
+        'description2'
+        'buttons';
     grid-row-gap: 15px;
 }
 
