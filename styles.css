@@ -1,5 +1,5 @@
 h1 {
-    font-size: 80px;
+    font-size: 90px;
     font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -83,6 +83,7 @@ p{
 
 #description1{
     grid-area: description1;
+    margin-top: -15px;
 }
 
 #description2{
