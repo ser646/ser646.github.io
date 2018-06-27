@@ -75,8 +75,8 @@ p{
     background: #292929;
     border: black solid 2px;
     padding-left: 15px;
-    border-bottom-right-radius: 0px;
-    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 #description1{
